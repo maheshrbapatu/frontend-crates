@@ -1,9 +1,9 @@
 {
-  "snapshot": "20261023_142600",
-  "created_pt": "2026-10-23 14:26:00 America/Los_Angeles",
+  "snapshot": "20261025_001014",
+  "created_pt": "2026-10-25 00:10:14 America/Los_Angeles",
   "crates": {
-    "dynamo-parsers": "10.1.0",
-    "dynamo-parsers-v2": "0.8.0"
+    "dynamo-parsers": "10.2.1",
+    "dynamo-parsers-v2": "0.8.1"
   },
   "peers": {
     "vllm": "0.26.0",
@@ -331,9 +331,14 @@
       "size": 35957
     },
     {
+      "path": "toolcalling/fixtures-stream-v1/dynamo_v2-0.8.1.tar.gz",
+      "sha256": "3ca928cdb9277ca49fe6f25815d62bde2526c41a505b9ef22f3e7d1cfa900e74",
+      "size": 35949
+    },
+    {
       "path": "toolcalling/fixtures-stream-v1/inputs.tar.gz",
-      "sha256": "29dc8a7d28b03eaff4b0472207c93c570c3b6c772af4c89d1eeb91e7200034ca",
-      "size": 208043
+      "sha256": "b3a39ffd517de5e59a39f6dbfb92c71aa8ca10d492ef1000d4cd494c4299b8b8",
+      "size": 208837
     },
     {
       "path": "toolcalling/fixtures-stream-v1/sglang_python-0.5.12.post1.tar.gz",
@@ -388,8 +393,8 @@
     {
       "path": "unified-history",
       "format": "unified-history",
-      "sha256": "59de8ec23ddaf12292d3d099d179f786636fe1d88a99ba2ee1a27f8dfd7f745b",
-      "size": 57256727
+      "sha256": "5c0303c8ce5b63559627a49f0e4717c36d36499a8e6410bebe95551825929271",
+      "size": 57821716
     }
   ],
   "inactive_shards": []

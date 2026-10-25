@@ -940,8 +940,8 @@ def test_unified_case_counts_match_the_generator():
         "gpt_oss": 169,
         "kimi_k2": 132,
         "kimi_k3": 142,
-        "muse_glimmer": 139,
-        "muse_spark": 146,
+        "muse_glimmer": 144,
+        "muse_spark": 152,
         "qwen3": 133,
         "nemotron_v3": 134,
     }
@@ -1934,7 +1934,7 @@ def _assert_cross_family_contract(corpus):
             if scenario == "gpt_oss_truncated_tool_resynchronizes_at_next_message":
                 following = [{"kind": "text", "text": "recovered"}]
                 assert events == ([{"kind": "tool_call", "name": "lookup", "arguments": {"q": "unfinished"}}]
-                                  if family == "muse_glimmer" else []) + following
+                                  if family in {"muse_glimmer", "muse_spark"} else []) + following
                 events = following
             if scenario == "gpt_oss_quoted_truncated_tool_then_final":
                 assert events == [{"kind": "text", "text": "Answer"}], (family, scenario, "missing recovered answer")

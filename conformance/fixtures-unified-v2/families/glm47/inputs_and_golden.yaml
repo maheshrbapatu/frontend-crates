@@ -6439,7 +6439,7 @@ cases:
   arg_null_mixed_labels:
     lifecycle: active
     scenario: arg_null_mixed_labels
-    description: 'PR #268: set_labels has nullable label (anyOf), nullable note (type array), and non-nullable literal (string). Identical bare null text must yield {"label": null, "note": null, "literal": "null"}. This single capture is referenced by both 7-4 and 7-5.'
+    description: 'set_labels has nullable label (anyOf), nullable note (type array), and non-nullable literal (string). Schema-driven grammars receive identical bare null text; explicitly typed grammars use native null and string encodings. Both yield {"label": null, "note": null, "literal": "null"}.'
     policy:
     - I7
     display_id: UNIFIED.7-arg_null_mixed_labels
@@ -6842,7 +6842,7 @@ cases:
   arg_json_null_ref:
     lifecycle: active
     scenario: arg_json_null_ref
-    description: 'The request tool schema permits JSON null. Bare parameter text `null` must produce JSON `null`; grammars with explicit types use native null syntax. Variants cover nullable type arrays, anyOf, oneOf, nullable, and const. Mixed-field probes also assert that non-nullable fields remain strings. Refs #251, #268, #269. GLM regression for PR #268: `city` uses a local $ref to the tool parameters root; the referenced definition controls null coercion.'
+    description: 'The request tool schema permits JSON null. Bare parameter text `null` must produce JSON `null`; grammars with explicit types use native null syntax. Variants cover nullable type arrays, anyOf, oneOf, nullable, and const. Mixed-field probes also assert that non-nullable fields remain strings. Refs #251, #268, #269. `city` uses a local $ref to the tool parameters root; the referenced definition permits JSON null.'
     policy:
     - I7
     display_id: UNIFIED.7-arg_json_null_ref

@@ -14267,7 +14267,6 @@ cases:
         name: get_weather
         arguments:
           city: 'null'
-
   arg_array_quoted_parameter_close:
     lifecycle: active
     scenario: arg_array_quoted_parameter_close
@@ -14402,7 +14401,6 @@ cases:
         name: lookup
         arguments:
           markers: <think></think><|tool_calls_section_begin|><|tool_call_begin|><|tool_call_argument_begin|><|tool_call_end|><|tool_calls_section_end|>
-
   gpt_oss_invalid_tool_body_then_empty_call:
     lifecycle: active
     scenario: gpt_oss_invalid_tool_body_then_empty_call
@@ -14444,7 +14442,6 @@ cases:
       - kind: tool_call
         name: get_weather
         arguments: {}
-
   gpt_oss_invalid_tool_body_then_valid_call:
     lifecycle: active
     scenario: gpt_oss_invalid_tool_body_then_valid_call
@@ -14487,7 +14484,6 @@ cases:
         name: get_weather
         arguments:
           city: Paris
-
   gpt_oss_multiple_unknown_and_empty_tools:
     lifecycle: active
     scenario: gpt_oss_multiple_unknown_and_empty_tools

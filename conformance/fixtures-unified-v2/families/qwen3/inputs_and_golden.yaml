@@ -19770,7 +19770,6 @@ cases:
           label: null
           note: null
           literal: 'null'
-
   arg_array_quoted_parameter_close:
     lifecycle: active
     scenario: arg_array_quoted_parameter_close

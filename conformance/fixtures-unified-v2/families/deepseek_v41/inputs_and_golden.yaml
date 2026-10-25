@@ -15042,7 +15042,6 @@ cases:
         name: get_weather
         arguments:
           city: 'null'
-
   arg_array_quoted_parameter_close:
     lifecycle: active
     scenario: arg_array_quoted_parameter_close
@@ -15176,7 +15175,6 @@ cases:
         name: not_offered
         arguments:
           x: 2
-
   gpt_oss_control_marker_inside_argument_string:
     lifecycle: active
     scenario: gpt_oss_control_marker_inside_argument_string
@@ -15215,7 +15213,6 @@ cases:
         name: lookup
         arguments:
           markers: <think></think><｜DSML｜ calls><｜DSML｜ invoke name="lookup"><｜DSML｜ parameter name="q" string="true"></｜DSML｜ parameter></｜DSML｜ invoke></｜DSML｜ calls><｜DSML｜</｜DSML｜
-
   gpt_oss_invalid_tool_body_then_empty_call:
     lifecycle: active
     scenario: gpt_oss_invalid_tool_body_then_empty_call
@@ -15249,7 +15246,6 @@ cases:
       - kind: tool_call
         name: get_weather
         arguments: {}
-
   gpt_oss_invalid_tool_body_then_valid_call:
     lifecycle: active
     scenario: gpt_oss_invalid_tool_body_then_valid_call

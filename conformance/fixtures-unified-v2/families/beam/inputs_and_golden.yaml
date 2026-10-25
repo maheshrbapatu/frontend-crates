@@ -16644,7 +16644,6 @@ cases:
         name: get_weather
         arguments:
           city: 'null'
-
   arg_array_quoted_parameter_close:
     lifecycle: active
     scenario: arg_array_quoted_parameter_close
@@ -16801,7 +16800,6 @@ cases:
         text: checking
       - kind: text
         text: done
-
   gpt_oss_multiple_unknown_and_empty_tools:
     lifecycle: active
     scenario: gpt_oss_multiple_unknown_and_empty_tools
@@ -16857,7 +16855,6 @@ cases:
         name: not_offered
         arguments:
           x: '2'
-
   gpt_oss_truncated_tool_resynchronizes_at_next_message:
     lifecycle: active
     scenario: gpt_oss_truncated_tool_resynchronizes_at_next_message

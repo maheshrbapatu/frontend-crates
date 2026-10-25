@@ -14499,7 +14499,6 @@ cases:
         name: get_weather
         arguments:
           city: 'null'
-
   arg_array_quoted_parameter_close:
     lifecycle: active
     scenario: arg_array_quoted_parameter_close
